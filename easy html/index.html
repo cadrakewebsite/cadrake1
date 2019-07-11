@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+/*.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right 
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);*/
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+<center>
+<button type="button" onclick="myFunction()">Set background image</button>
+
+
+  
+    
+ <audio controls autoplay>
+  <source src="music.mp3" type="audio/ogg">
+  <source src="music.mp3" type="audio/mpeg">
+
+</audio>   
+    
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+ <a href = "https://en.wikipedia.org/wiki/California" target = "_blank"> 
+  <img src="img.png/imag1.png" style="width:1100px"></a>
+    <div class="text"><b><font size=38 color="black">My Home state</font></b></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <a href = "https://www.californiabeaches.com/beach/moonlight-state-beach/" target = "_blank"> 
+  <img src="img.png/imag2.png" style="width:1100px"></a>
+    <div class="text"><b><font size=38 color="#00ccff">Beach where I grew up</font></b></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <a href = "https://www.kusi.com/week-10-shacks-pig-pen-carson-drake-santa-fe-christian/" target = "_blank"> 
+  <img src="img.png/imag3.png" style="width:1100px"></a>
+    <div class="text"><b><font size=38 color="red">Highschool football</font></b></div>
+</div>
+    <div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <a href = "https://gojoebruin.com/2019/06/28/ucla-football-meet-the-50-newest-bruins-both-scholarship-and-walk-ons/3/" target = "_blank"> 
+  <img src="img.png/imag6.png" style="width:1100px"></a>
+        <div class="text"><b><font size=38 color="#00ccff">Go Bruins!!!</font></b></div>
+</div>
+    <div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <a href = "https://sfcs.net" target = "_blank"> 
+  <img src="img.png/imag5.png" style="width:1100px"></a>
+    <div class="text"><b><font size=38 color="red">My Highschool</font></b></div>
+</div>
+        <div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <a href = "https://encinitas101.com" target = "_blank"> 
+  <img  src="img.png/imag4.png" style="width:1100px" ></a>
+    <div class="text"><b><font size=38 color="#00ccff">Best place ever</font></b></div>
+</div>
+     <div class="mySlides fade">
+  <div class="numbertext">7 / 7</div>
+  <a href = "done.html" target = "_blank"> 
+  <img  src="done.png" style="width:1100px" ></a>
+    <div class="text"><b><font size=38 color="#00ccff"></font></b></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+
+    
+
+</div>
+
+<script>
+
+function myFunction() {
+  document.body.style.backgroundColor = "#f3f3f3";
+  document.body.style.backgroundImage = "url('img.png/sky.png')";
+}    
+    
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</center>
+</body>
+</html> 
+
