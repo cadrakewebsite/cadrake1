@@ -1,3 +1,7 @@
+
+[hyper-text portrait](easy.html)
+
+
 Blog week 1
 
 The telegraph marked the beginning of near instant communication. (Carey, J. (2009)) The introduction of this technology allowed for the first time for communication and transportation to be seperate, meaning that instead of someone having to hand deliver letters the information could be simply transmitted to stations ((Carey, J. (2009)). This in turn had a great impact on the economy, because in company with the locomotive it allowed for long distance transactions. However, some communication was lost between the buyer and seller. In order to cut costs shorter messages had to be sent (Carey, J. (2009)). The telegraph also marked the ability to transfer money over these long distances. The telegraph would soon be overtaken by new technologies, but many were based off the original invention. While James W. Carey seems to be saying in his Technology and Ideology: The Case of The Telegraph he says the telegraphed is overlooked (Carey, J. (2009)) however in my opinion with the impact that it had on all aspects of the american society it could not have been overlooked. While yes compared to the industrial revolution it is studied less I think it is still highly regarded as a turning point in american society and technology.	
