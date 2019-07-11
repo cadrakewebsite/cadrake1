@@ -1,5 +1,5 @@
 
-[hyper-text portrait](easy.html)
+[hyper-text portrait](easy html)
 
 
 Blog week 1
